@@ -10,7 +10,7 @@ trap "mv coldkernel.config.orig coldkernel.config & pkill -f build.sh " 1 2
 
 source "$(pwd)/spinner.sh"
 
-SOURCE=https://www.kernel.org/pub/linux/kernel/v4.x
+SOURCE=https://mirror.pegboardhosting.ca/pub/linux/kernel/v4.x
 KERNEL=linux
 VERSION=4.8.13
 GRSECVERSION=3.1
@@ -42,7 +42,7 @@ function get_kernel () {
 function get_patches () {
     if [ ! -d patches ]
     then
-	git clone https://github.com/coldhakca/deepfreeze patches -b $VERSION
+	git clone https://github.com/phoul/deepfreeze patches -b $VERSION
     else
 	cd patches
 	git pull
