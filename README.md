@@ -59,8 +59,8 @@ wget "https://coldhak.ca/coldhak/keys/coldhak.asc" -O coldhak.asc
 gpg --import coldhak.asc
 git clone https://github.com/coldhakca/coldkernel
 cd coldkernel
-git verify-tag coldkernel-0.9a-4.9.15
-git checkout tags/coldkernel-0.9a-4.9.15
+git verify-tag coldkernel-0.9a-4.9.17
+git checkout tags/coldkernel-0.9a-4.9.17
 ```
 ### Build
 Run ```make``` without arguments to build without hypervisor support. Otherwise, select the option below that best describes
