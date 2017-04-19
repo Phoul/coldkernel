@@ -2,7 +2,7 @@
 # Description = coldkernel build script
 # Script version = 0.9a
 # Code name = Subversive Sloth
-# Kernel version = 4.9.20-coldkernel-grsec
+# Kernel version = 4.9.23-coldkernel-grsec
 # Authors = coldhak (C. // J. // R. // T.)
 
 set -e
@@ -12,7 +12,7 @@ source "$(pwd)/spinner.sh"
 
 SOURCE=https://mirror.pegboardhosting.ca/pub/linux/kernel/v4.x
 KERNEL=linux
-VERSION=4.9.20
+VERSION=4.9.23
 GRSECVERSION=3.1
 NUM_CPUS=`grep -c ^processor /proc/cpuinfo`
 
